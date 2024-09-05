@@ -2,12 +2,8 @@
 ## Header-Only C++20 Reference Counting Library
 
 #### Example of Custom Reference Counting
-```cpp
-
 Here's a basic example of how you might implement custom reference counting in C++:
-
-cpp
-Copy code
+```cpp
 #include <iostream>
 
 class RefCounted {
