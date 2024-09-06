@@ -69,4 +69,4 @@ int main() {
     return 0;
 }
 ```
-and that is one way of making sure you call delete and "garbage collection" in C++
+and that is one way of making sure you call delete and "garbage collection" in C++17 or when using a custom solution
