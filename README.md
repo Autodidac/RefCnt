@@ -1,6 +1,26 @@
 # RefCnt
 ## Header-Only C++20 Reference Counting Library
 
+
+
+
+### Common Uses of Reference Counting in C++20:
+```cpp
+std::shared_ptr: This is the most common use of reference counting in modern C++. std::shared_ptr is a smart pointer that retains ownership of an object through a reference count. When the reference count drops to zero, the object is automatically deleted.
+```
+```cpp
+Copy code
+#include <memory>
+
+std::shared_ptr<int> ptr1 = std::make_shared<int>(10);
+std::shared_ptr<int> ptr2 = ptr1; // ptr1 and ptr2 share ownership
+
+// The integer is destroyed when both ptr1 and ptr2 are out of scope
+
+```
+Custom Reference Counting: For more control or specific use cases, you might implement your own reference counting mechanism. This can be useful for certain types of resource management or optimization scenarios.
+
+
 #### Example of Custom Reference Counting
 Here's a basic example of how you might implement custom reference counting in C++:
 ```cpp
