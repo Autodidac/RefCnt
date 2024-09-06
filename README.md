@@ -5,9 +5,9 @@
 
 
 ### Common Uses of Reference Counting in C++20:
-```cpp
+
 std::shared_ptr: This is the most common use of reference counting in modern C++. std::shared_ptr is a smart pointer that retains ownership of an object through a reference count. When the reference count drops to zero, the object is automatically deleted.
-```
+
 ```cpp
 Copy code
 #include <memory>
